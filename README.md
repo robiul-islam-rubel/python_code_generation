@@ -4,19 +4,19 @@
 Python code generation involves the use of pre-trained models to generate syntactically and semantically correct Python code based on prompts or input descriptions. Pre-trained models are typically large-scale language models fine-tuned on programming languages (e.g., Python, Java, C++) and are capable of understanding natural language and producing functional code.
 
 ###  Benefits of Using Pre-trained Models
-Efficiency: Speeds up the development process by automating repetitive coding tasks.
-Versatility: Can generate code for a wide range of tasks, from simple functions to complex scripts.
-Learning Aid: Assists developers in understanding best practices and common programming patterns.
-Error Reduction: Helps identify and resolve syntax or logical errors in code.
+Efficiency: Speeds up the development process by automating repetitive coding tasks.<br>
+Versatility: Can generate code for a wide range of tasks, from simple functions to complex scripts. <br>
+Learning Aid: Assists developers in understanding best practices and common programming patterns.<br>
+Error Reduction: Helps identify and resolve syntax or logical errors in code.<br>
 
 #### Pipeline Description
 
-To replicate the experiments you can rely on this two files *vulrepair_main.py* and *vulrepair_main_prompt.py*.
-While the former can be used to retrain the original VulRepair approach as well as the ablation model (i.e., T5-base without pre-training), the latter serves the promp-tuning procedure.  Before starting replicating any of the experiments we performed, make sure to install the requirements (see *requirements.txt*)
+To replicate the experiments you can rely on any of this files: *codellama-7b.py* and *gpt2.py*. For finetuning, you can run any file which is not start with ```infer```
+Before starting replicating any of the experiments we performed, make sure to install the requirements (see *requirements.txt*)
 
-#### Data Statistics
+#### Evaluation
 
-Data statistics of the datasets are shown in the below table:
+The evaluation of different models are shown in the below table:
 
 |         | #Examples   | #Examples       | #Examples
 | ------- | :-------:   | :-------:       | :-------:
@@ -29,12 +29,13 @@ Data statistics of the datasets are shown in the below table:
 
 *The following starts a fine-tuning procedure using the classic supervised approach*
 
-##### Training
+##### Inference
+For inference, you can run any file which is start with infer. Remember if order to run the Codellama-13b file, you need higher GPU resources.
 
 
 
 
-#### Datasets :paperclip:
+#### Datasets
 
-* The datasets for fine-tuning the models are stored on GDrive <a href="https://drive.google.com/drive/folders/1-3eLMTVLx8evwC9ROUBq9q-IdYHuy_WK?usp=sharing">here</a>
-* The dataset for supervised pre-training (Chen et al.) is available here <a href="https://drive.google.com/drive/folders/1DtaNb2FaxGiei8DI1NGy4X9tYlYsxtp3?usp=sharing">here</a>
+* The dataset (```CodeSearchNet```) for fine-tuning the models are available on <a href="https://huggingface.co/datasets/code-search-net/code_search_net">huggingface</a>
+* The dataset (```CodeAlpaca_20k```) for fine-tuning the models are available on <a href="https://huggingface.co/datasets/HuggingFaceH4/CodeAlpaca_20K">here</a>
