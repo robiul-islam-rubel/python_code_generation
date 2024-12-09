@@ -19,6 +19,7 @@ While the former can be used to retrain the original VulRepair approach as well 
 Data statistics of the datasets are shown in the below table:
 
 
+|         | #Examples   | #Examples       | #Examples
 | ------- | :-------:   | :-------:       | :-------:
 |         |   BLEU Score |  ROUGE-L  | BERT Score
 |  CodeLlama-7b  |   30.78     |    0.38       |  0.87
