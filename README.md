@@ -9,10 +9,18 @@ Versatility: Can generate code for a wide range of tasks, from simple functions 
 Learning Aid: Assists developers in understanding best practices and common programming patterns.<br>
 Error Reduction: Helps identify and resolve syntax or logical errors in code.<br>
 
+### Example of fine-tune model data format
+```python
+ {
+    "docstring": "Write a Python function to add two numbers and return the result.",
+    "code": "def add_numbers(a, b):\n    result = a + b\n    return result"
+}
+```
+
 #### Pipeline Description
 
-To replicate the experiments you can rely on any of this files: *codellama-7b.py* and *gpt2.py*. For finetuning, you can run any file which is not start with ```infer```
-Before starting replicating any of the experiments we performed, make sure to install the requirements (see *requirements.txt*)
+To replicate the experiments you can rely on any of these files: ```codellama-7b.py``` and ```gpt2.py```. For finetuning, you can run any file which is not start with ```infer```.
+Before starting replicating any of the experiments we performed, make sure to install the requirements (see ```requirements.txt```)
 
 #### Evaluation
 
@@ -25,12 +33,10 @@ The evaluation of different models are shown in the below table:
 |  CodeT5-Large  |   14.56      |    0.31          |  0.59
 |   GPT-2  |  18.83     |    0.28        |  0.85
 
-#### Fine-tuning  
 
-*The following starts a fine-tuning procedure using the classic supervised approach*
 
 ##### Inference
-For inference, you can run any file which is start with infer. Remember if order to run the Codellama-13b file, you need higher GPU resources.
+For inference, you can run any file which is start with infer. Remember if order to run the Codellama-13b file, you need higher ```GPU``` resources.
 
 
 
