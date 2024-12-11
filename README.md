@@ -19,12 +19,12 @@ Error Reduction: Helps identify and resolve syntax or logical errors in code.<br
 
 #### Pipeline Description
 
-To replicate the experiments you can rely on any of these files: ```codellama-7b.py``` and ```gpt2.py```. For finetuning, you can run any file that does not start with ```infer```.
+To replicate the experiments, you can rely on any of these files: ```codellama-7b.py``` and ```gpt2.py```. For fine-tuning, you can run any file that does not start with ``infer```.
 Before starting replicating any of the experiments we performed, make sure to install the requirements (see ```requirements.txt```)
 
 #### Evaluation
 
-The evaluation of different models is shown in the below table:
+The evaluation of different models is shown in the table below:
 
 |         | #Examples   | #Examples       | #Examples
 | ------- | :-------:   | :-------:       | :-------:
@@ -36,7 +36,7 @@ The evaluation of different models is shown in the below table:
 
 
 ##### Inference
-For inference, you can run any file that starts with infer. Remember to run the Codellama-13b file, you need higher ```GPU``` resources.
+You can run any file that starts with infer for inference. Remember that to run the Codellama-13b file, you need higher ```GPU``` resources.
 
 
 
@@ -45,3 +45,5 @@ For inference, you can run any file that starts with infer. Remember to run the 
 
 * The dataset (```CodeSearchNet```) for fine-tuning the models are available on <a href="https://huggingface.co/datasets/code-search-net/code_search_net">huggingface</a>
 * The dataset (```CodeAlpaca_20k```) for fine-tuning the models are available on <a href="https://huggingface.co/datasets/HuggingFaceH4/CodeAlpaca_20K">huggingface</a>
+
+N.B: You should use ```Python 3.10.12``` for unnecessary python version problems.
