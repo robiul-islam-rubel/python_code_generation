@@ -1,15 +1,7 @@
-from transformers import GPT2LMHeadModel, GPT2Tokenizer
-import torch
-import pandas as pd
-from datasets import load_dataset
-from tqdm import tqdm
-import sacrebleu
-from rouge_score import rouge_scorer
-from bert_score import score as bert_score
-
+from utils import *
 
 # Set up device
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = set_device(0)
 
 # Load the tokenizer and model
 model_name = "gpt2"
