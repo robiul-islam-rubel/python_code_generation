@@ -1,5 +1,5 @@
 from datasets import load_dataset, Dataset,DatasetDict
-from transformers import AutoModelForCausalLM, AutoTokenizer, LlamaTokenizer, Trainer, TrainingArguments,AutoModelWithLMHead,BitsAndBytesConfig,AutoModelForSeq2SeqLM,GPT2LMHeadModel, GPT2Tokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, LlamaTokenizer, Trainer, TrainingArguments,AutoModelWithLMHead,BitsAndBytesConfig,AutoModelForSeq2SeqLM,GPT2LMHeadModel, GPT2Tokenizer,DataCollatorForSeq2Seq
 from peft import (
         get_peft_model,
         LoraConfig,
