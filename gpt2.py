@@ -133,5 +133,5 @@ trainer = Trainer(
 trainer.train()
 
 # Save trained model
-model.save_pretrained("gpt2-lora")
-tokenizer.save_pretrained("gpt2-lora")
+model.save_pretrained("gpt2")
+tokenizer.save_pretrained("gpt2")
