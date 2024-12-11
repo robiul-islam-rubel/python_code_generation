@@ -7,7 +7,13 @@ Python code generation involves the use of pre-trained models to generate syntac
 Efficiency: Speeds up the development process by automating repetitive coding tasks.<br>
 Versatility: Can generate code for a wide range of tasks, from simple functions to complex scripts. <br>
 Learning Aid: Assists developers in understanding best practices and common programming patterns.<br>
-Error Reduction: Helps identify and resolve syntax or logical errors in code.<br>
+Error Reduction: Helps identify and resolve syntax or logical errors in code.<be>
+
+## Minimum configuration
+
+- I Only test A40 GPUs with 46GB memory for finetune.
+- If you see a ```CUDA``` error, remember to use ```CUDA_VISIBLE_DEVICES=3```, where 3 is the GPU number, you can use any GPU that is available or you can also set the device in the ```set_device(0)```, here 0 is GPU number.
+
 
 ### Example of fine-tuning model data format
 ```python
