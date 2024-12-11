@@ -47,4 +47,4 @@ You can run any file that starts with infer for inference. Remember that to run 
 * The dataset (```CodeAlpaca_20k```) for fine-tuning the models are available on <a href="https://huggingface.co/datasets/HuggingFaceH4/CodeAlpaca_20K">huggingface</a>
 
 N.B: You should use ```Python 3.10.12``` for unnecessary Python version problems. <be>
-# codet5-base.py, if you want to fine-tune the large one then you just need to change the model name. It is the same for the CodeLlama as well.
+* ```codet5-base.py```, if you want to fine-tune the large one then you just need to change the model name. It is the same for the ```CodeLlama``` as well.
