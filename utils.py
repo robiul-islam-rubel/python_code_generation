@@ -5,8 +5,8 @@ from peft import (
         LoraConfig,
         TaskType,
         prepare_model_for_kbit_training,
+        PeftModel
     )
-from peft import PeftModel
 import torch
 import pandas as pd
 import re
