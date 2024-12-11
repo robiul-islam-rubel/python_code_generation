@@ -12,7 +12,7 @@ from bert_score import score as bert_score
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load the tokenizer and model
-model_name = "gpt2-lora"
+model_name = "gpt2"
 
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 model = GPT2LMHeadModel.from_pretrained(model_name)
